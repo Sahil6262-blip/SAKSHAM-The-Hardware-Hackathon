@@ -1,0 +1,79 @@
+.hardware-scene {
+  width: 100%;
+  position: relative;
+}
+.hardware-scene svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  display: block;
+}
+.hardware-scene .chip-title {
+  font-family: var(--font-display);
+}
+.hardware-board {
+  animation: board-hover 8s ease-in-out infinite;
+  transform-origin: center;
+}
+.hardware-pulse {
+  animation: hardware-signal 7s linear infinite;
+}
+.hardware-led {
+  animation: hardware-led 3s ease-in-out infinite;
+}
+.circuit-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--cyan);
+  pointer-events: none;
+}
+.circuit-pulse {
+  animation: hardware-signal 8s linear infinite;
+}
+@keyframes hardware-signal {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+@keyframes board-hover {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes hardware-led {
+  50% {
+    opacity: 0.35;
+  }
+}
+@media (max-width: 700px) {
+  .hardware-small-details,
+  .hardware-annotations {
+    opacity: 0.6;
+  }
+  .hardware-board {
+    animation: none;
+  }
+  .hardware-pulse:nth-child(n + 3) {
+    animation: none;
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hardware-board,
+  .hardware-pulse,
+  .hardware-led,
+  .circuit-pulse {
+    animation: none !important;
+  }
+  .hardware-pulse,
+  .circuit-pulse {
+    stroke-dasharray: none;
+    opacity: 0.2;
+  }
+}
