@@ -8,7 +8,7 @@ export const eventConfig = {
   // Date-level countdown at midnight IST; the official daily schedule is pending.
   eventDate: '2026-10-01T00:00:00+05:30',
   eventDateLabel: '1 October 2026',
-  onlinePitchDateLabel: '24 September 2026',
+  onlinePitchDateLabel: '26 September 2026',
   reportingTime: '8:00 AM',
   // Date-level conclusion: do not infer an unannounced start/end clock time.
   eventEndDate: '2026-10-02T00:00:00+05:30',

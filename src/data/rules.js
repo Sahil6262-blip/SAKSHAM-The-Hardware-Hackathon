@@ -67,7 +67,7 @@ export const ruleBook = [
       },
       {
         label: 'Duration',
-        text: 'Crews have exactly 12 continuous hours on October 1, 2026, to prototype their solution.',
+        text: 'Crews have exactly 12* continuous hours on October 1, 2026, to prototype their solution.',
       },
       {
         label: 'Hardware Provision & Assembly',
@@ -75,13 +75,14 @@ export const ruleBook = [
       },
       {
         label: 'Backup Supply',
-        text: 'Ground Control will maintain a "Payload Supply" desk with ₹10,000 worth of backup emergency components.',
+        text: 'Ground Control will maintain a "Payload Supply" desk for backup emergency components. (Participants can buy components from there)',
       },
       {
         label: 'Mentorship Checkpoints',
         text: 'Throughout the 12 hours, "Flight Directors" (technical mentors) will conduct mandatory technical feasibility and system integration reviews.',
       },
     ],
+    note: '*Please note: The total 12-hour time limit is inclusive of all event formalities, including the inauguration and lunch breaks.',
   },
   {
     number: '05',

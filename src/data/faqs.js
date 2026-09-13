@@ -15,6 +15,10 @@ export const faqs = [
     answer:
       'The registration fee for the pitching round is ₹200. Shortlisted teams must pay an additional ₹500 registration fee for the offline round.',
   },
+  {
+    question: 'How will the online pitching round work?',
+    answer: `The online pitching round will be held on ${event.onlinePitchDateLabel}. Each team will receive 5 minutes to present its idea, followed by a 3-minute Q&A with the review panel. Meeting details will be shared by the organizing team.`,
+  },
   { question: 'What is the prize pool?', answer: `The total prize pool is ${event.prizePool}.` },
   {
     question: 'What are the official domains?',

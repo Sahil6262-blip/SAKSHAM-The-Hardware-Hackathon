@@ -2200,6 +2200,13 @@ body {
   color: #e4dbe9;
   font-weight: 550;
 }
+.rulebook-note {
+  margin: 18px 0 0 70px;
+  color: #827a8a;
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.6;
+}
 .rulebook-chapter:last-child .rulebook-number {
   color: #f2aa87;
 }
@@ -2276,5 +2283,9 @@ body {
     padding-left: 16px;
     font-size: 13px;
     line-height: 1.68;
+  }
+  .rulebook-note {
+    margin-left: 0;
+    font-size: 10px;
   }
 }

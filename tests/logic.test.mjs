@@ -47,7 +47,7 @@ test('the five official domains and association identity match the event brief',
   assert.deepEqual(eventConfig.association, ['IEEE-SB', 'IETE-SF'])
   assert.equal(eventConfig.prizePool, '₹30,000')
   assert.equal(eventConfig.teamSize, '3–4 Members')
-  assert.equal(eventConfig.onlinePitchDateLabel, '24 September 2026')
+  assert.equal(eventConfig.onlinePitchDateLabel, '26 September 2026')
   assert.equal(eventConfig.reportingTime, '8:00 AM')
   assert.deepEqual(
     eventConfig.contacts.map(({ name, phone }) => ({ name, phone })),

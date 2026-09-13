@@ -45,6 +45,7 @@ export default function App() {
         <Navbar />
         <main id="main" ref={page}>
           <Hero active={entering} />
+          <Countdown />
           <EventMarquee />
           <About />
           <DurationSection />
@@ -52,7 +53,6 @@ export default function App() {
           <EventStats />
           <BuildFlow />
           <PrizePool />
-          <Countdown />
           <Timeline />
           <Eligibility />
           <ProblemStatements />

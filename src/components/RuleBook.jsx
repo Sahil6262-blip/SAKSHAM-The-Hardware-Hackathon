@@ -52,6 +52,7 @@ export default function RuleBook() {
                   </li>
                 ))}
               </ul>
+              {chapter.note && <p className="rulebook-note">{chapter.note}</p>}
             </li>
           ))}
         </ol>
