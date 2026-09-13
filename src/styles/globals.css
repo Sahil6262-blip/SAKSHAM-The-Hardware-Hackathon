@@ -371,7 +371,17 @@ footer {
 .college-lockup {
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 22px;
+  width: min(680px, 70vw);
+  min-height: 114px;
+  padding: 11px 22px 11px 11px;
+  border: 1px solid #d9c8ed42;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #1b1429ed, #0b0914bd);
+  box-shadow: 0 14px 36px #03020a52;
+}
+.college-lockup > div {
+  min-width: 0;
 }
 .institutional-logo {
   display: inline-flex;
@@ -394,22 +404,22 @@ footer {
   background: #f8f8fb;
 }
 .college-lockup > .institutional-logo img {
-  width: 56px;
-  height: 56px;
+  width: 88px;
+  height: 88px;
 }
 .college-lockup > div > p {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 17px;
   letter-spacing: 0.5px;
-  max-width: 430px;
+  max-width: 500px;
   line-height: 1.6;
 }
 .college-lockup > div > span {
   display: block;
   color: #8998aa;
-  font-size: 9px;
-  margin-top: 4px;
-  max-width: 430px;
+  font-size: 12px;
+  margin-top: 6px;
+  max-width: 500px;
   line-height: 1.7;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -1903,29 +1913,34 @@ footer {
   }
   .hero-organizers {
     align-items: start;
+    flex-wrap: wrap;
     gap: 15px;
   }
   .college-lockup {
-    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    gap: 14px;
+    padding: 9px 11px;
   }
   .college-lockup > .institutional-logo {
     font-size: 23px;
     padding: 5px;
   }
   .college-lockup > .institutional-logo img {
-    width: 46px;
-    height: 46px;
+    width: 72px;
+    height: 72px;
   }
   .college-lockup > div > p {
-    font-size: 9px;
-    line-height: 1.7;
+    font-size: 13px;
+    line-height: 1.55;
     letter-spacing: 0.25px;
-    max-width: 245px;
+    max-width: none;
   }
   .college-lockup > div > span {
-    font-size: 7px;
+    font-size: 10px;
     letter-spacing: 0.15px;
-    max-width: 250px;
+    max-width: none;
   }
   .association-lockup {
     gap: 8px;
@@ -1978,7 +1993,7 @@ footer {
     font-size: clamp(28px, 6.8vw, 40px);
   }
   .hero-description {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 13px;
   }
   .hero-facts {
@@ -2033,7 +2048,7 @@ footer {
     padding-block: 17px;
   }
   .marquee-set > span {
-    font-size: 9px;
+    font-size: 10px;
     padding-right: 24px;
     gap: 24px;
   }
@@ -2360,10 +2375,10 @@ footer {
     height: auto;
   }
   .college-lockup > div > p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .college-lockup > div > span {
-    font-size: 7px;
+    font-size: 9px;
   }
   .hero-container {
     padding-bottom: 0;
