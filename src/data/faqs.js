@@ -13,7 +13,7 @@ export const faqs = [
   {
     question: 'What is the registration fee?',
     answer:
-      'The registration fee for the pitching round is ₹200. Shortlisted teams must pay an additional ₹500 registration fee for the offline round.',
+      'The registration fee for the pitching round is ₹100. Shortlisted teams must pay an additional ₹500 registration fee for the offline round.',
   },
   {
     question: 'How will the online pitching round work?',

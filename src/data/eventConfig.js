@@ -17,7 +17,7 @@ export const eventConfig = {
   eligibility: 'Open to All UG Students',
   prizePool: '₹30,000',
   prizeAmount: 30000,
-  registrationFee: '₹200*',
+  registrationFee: '₹100*',
   college: "Vidyavardhini's College of Engineering and Technology",
   department: 'Department of Electronics and Telecommunications Engineering',
   association: ['IEEE-SB', 'IETE-SF'],
