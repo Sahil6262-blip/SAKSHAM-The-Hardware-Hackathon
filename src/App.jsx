@@ -13,7 +13,6 @@ import PrizePool from './components/PrizePool'
 import Countdown from './components/Countdown'
 import Timeline from './components/Timeline'
 import Eligibility from './components/Eligibility'
-import ProblemStatements from './components/ProblemStatements'
 import RuleBook from './components/RuleBook'
 import FAQ from './components/FAQ'
 import RegisterCTA from './components/RegisterCTA'
@@ -55,7 +54,6 @@ export default function App() {
           <PrizePool />
           <Timeline />
           <Eligibility />
-          <ProblemStatements />
           <RuleBook />
           <FAQ />
           <RegisterCTA />
