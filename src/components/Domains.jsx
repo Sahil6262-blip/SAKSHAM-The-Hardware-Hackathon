@@ -2,20 +2,36 @@ import { useLayoutEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Building2, Leaf, Sprout, Bot, HeartPulse, ArrowUpRight } from 'lucide-react'
+import { Building2, Leaf, Sprout, Bot, HeartPulse, Lightbulb, ArrowUpRight } from 'lucide-react'
 import { domains } from '../data/domains'
 import { eventConfig } from '../data/eventConfig'
 import useReducedMotion from '../hooks/useReducedMotion'
 import '../styles/domains.css'
 
 gsap.registerPlugin(ScrollTrigger)
-const icons = { city: Building2, leaf: Leaf, plant: Sprout, robot: Bot, health: HeartPulse }
+const icons = {
+  city: Building2,
+  leaf: Leaf,
+  plant: Sprout,
+  robot: Bot,
+  health: HeartPulse,
+  idea: Lightbulb,
+}
 const routes = [
   'M600 290C500 300 470 100 360 120',
   'M600 290C705 305 720 102 840 120',
   'M600 290C500 260 440 420 360 390',
   'M600 290C700 260 750 420 840 390',
-  'M600 290C670 355 670 460 600 505',
+  'M600 290C520 400 470 585 360 625',
+  'M600 290C680 400 730 585 840 625',
+]
+const routeEndpoints = [
+  [360, 120],
+  [840, 120],
+  [360, 390],
+  [840, 390],
+  [360, 625],
+  [840, 625],
 ]
 export default function Domains() {
   const [active, setActive] = useState('smart-cities')
@@ -93,8 +109,8 @@ export default function Domains() {
                   strokeDasharray="100"
                 />
                 <circle
-                  cx={[360, 840, 360, 840, 600][i]}
-                  cy={[120, 120, 390, 390, 505][i]}
+                  cx={routeEndpoints[i][0]}
+                  cy={routeEndpoints[i][1]}
                   r="4"
                   fill={domains[i].accent}
                 />
@@ -112,7 +128,9 @@ export default function Domains() {
                 ONLINE
               </span>
             </div>
-            <span className="domain-core-footer mono">05 / MODULES CONNECTED</span>
+            <span className="domain-core-footer mono">
+              {String(domains.length).padStart(2, '0')} / MODULES CONNECTED
+            </span>
           </div>
           {domains.map((domain) => {
             const Icon = icons[domain.icon]

@@ -259,7 +259,7 @@ export default function HardwareScene({ className = '' }) {
           </text>
           <path d="M502 312H636V345" stroke="#544959" />
           <text x="555" y="365" fill="#a096a3">
-            5 MODULES CONNECTED
+            6 MODULES CONNECTED
           </text>
           <path d="M220 413H515M220 408V418M515 408V418" stroke="#423a46" />
           <text x="306" y="434" fill="#7f7583">

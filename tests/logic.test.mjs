@@ -43,7 +43,7 @@ test('Google Form validation accepts form links and rejects placeholders and mis
   ])
     assert.equal(isRegistrationUrlValid(value), false)
 })
-test('the five official domains and association identity match the event brief', () => {
+test('the six official domains and association identity match the event brief', () => {
   assert.deepEqual(eventConfig.association, ['IEEE-SB', 'IETE-SF'])
   assert.equal(eventConfig.prizePool, '₹30,000')
   assert.equal(eventConfig.teamSize, '3–4 Members')
@@ -64,7 +64,8 @@ test('the five official domains and association identity match the event brief',
       'Agriculture & Rural Innovation',
       'Robotics & Automation',
       'Healthcare & Safety Technology',
+      'Student Innovation',
     ],
   )
-  assert.equal(new Set(domains.map((domain) => domain.id)).size, 5)
+  assert.equal(new Set(domains.map((domain) => domain.id)).size, 6)
 })

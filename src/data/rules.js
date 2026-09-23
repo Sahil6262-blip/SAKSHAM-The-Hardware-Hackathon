@@ -27,7 +27,7 @@ export const ruleBook = [
       },
       {
         label: 'Domain Selection',
-        text: 'During registration, the crew must lock in one of the five "Mission Directives" (Smart Cities, Robotics, Sustainable Tech, Healthcare, or Agriculture).',
+        text: 'During registration, the crew must lock in one of the six "Mission Directives" (Smart Cities, Robotics, Sustainable Tech, Healthcare, Agriculture, or Student Innovation).',
       },
       {
         label: 'Phase 2 Clearance',

@@ -105,11 +105,12 @@
   grid-row: 2;
 }
 .domain-module-05 {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 3;
-  min-width: 360px;
-  justify-self: center;
-  width: 360px;
+}
+.domain-module-06 {
+  grid-column: 3;
+  grid-row: 3;
 }
 .domain-module-top {
   display: flex;
@@ -322,10 +323,6 @@
   }
   .domain-description {
     font-size: 11px;
-  }
-  .domain-module-05 {
-    min-width: 340px;
-    width: 340px;
   }
 }
 @media (max-width: 900px) {

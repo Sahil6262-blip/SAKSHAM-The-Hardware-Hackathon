@@ -23,7 +23,7 @@ for (const width of widths) {
     expect(await page.evaluate(() => document.documentElement.style.overflow)).toBe('hidden')
     await enterParipath(page)
     await expect(page.getByRole('heading', { name: 'SAKSHAM’26', exact: true })).toBeVisible()
-    await expect(page.locator('.domain-module')).toHaveCount(5)
+    await expect(page.locator('.domain-module')).toHaveCount(6)
     await expect(page.locator('.rulebook-chapter')).toHaveCount(6)
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),

@@ -54,4 +54,15 @@ export const domains = [
     description:
       'Hardware solutions for health monitoring, assistive devices, emergency response, medical technology and personal safety.',
   },
+  {
+    id: 'student-innovation',
+    number: '06',
+    title: 'Student Innovation',
+    shortTitle: 'Student Innovation',
+    subtitle: '& Practical Solutions',
+    icon: 'idea',
+    accent: '#f0b08f',
+    description:
+      'Innovative ideas and practical solutions created by students to address real-world challenges.',
+  },
 ]

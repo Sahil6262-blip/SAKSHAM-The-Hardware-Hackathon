@@ -2207,6 +2207,125 @@ body {
   font-style: italic;
   line-height: 1.6;
 }
+
+.pitching-template-notice {
+  position: fixed;
+  z-index: 45;
+  top: 96px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  animation: pitching-notice-in 0.45s ease-out both;
+}
+.pitching-template-notice > .container {
+  max-width: 1160px;
+}
+.pitching-template-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+  padding: 26px 64px 26px 30px;
+  border: 1px solid #d8bdf13b;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 88% 18%, #8f5fbf1f, transparent 34%),
+    linear-gradient(115deg, #171022e8, #0c0a16e8);
+  box-shadow: 0 20px 60px #02010742;
+  pointer-events: auto;
+}
+.pitching-template-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid #d8bdf137;
+  border-radius: 50%;
+  color: #cbbbd4;
+  background: #ffffff08;
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    background 0.2s,
+    border-color 0.2s;
+}
+.pitching-template-close:hover {
+  color: #fff;
+  border-color: #d8bdf177;
+  background: #ffffff12;
+}
+.pitching-template-copy {
+  max-width: 820px;
+}
+.pitching-template-copy .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 13px;
+}
+.pitching-template-copy h2 {
+  margin: 0;
+  color: #f4edf8;
+  font: 500 clamp(22px, 2.2vw, 34px) / 1.15 var(--font-display);
+  letter-spacing: -0.035em;
+}
+.pitching-template-copy > p:last-child {
+  max-width: 740px;
+  margin: 14px 0 0;
+  color: #aaa1b4;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.pitching-template-download {
+  flex: 0 0 auto;
+  min-width: 244px;
+  min-height: 54px;
+}
+@keyframes pitching-notice-in {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .pitching-template-notice {
+    top: 82px;
+  }
+  .pitching-template-card {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 22px 22px;
+    border-radius: 16px;
+  }
+  .pitching-template-close {
+    top: 10px;
+    right: 10px;
+  }
+  .pitching-template-copy {
+    padding-right: 25px;
+  }
+  .pitching-template-copy h2 {
+    font-size: 23px;
+  }
+  .pitching-template-copy > p:last-child {
+    font-size: 13px;
+  }
+  .pitching-template-download {
+    width: 100%;
+    min-width: 0;
+  }
+}
 .rulebook-chapter:last-child .rulebook-number {
   color: #f2aa87;
 }
