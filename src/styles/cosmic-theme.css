@@ -2274,17 +2274,32 @@ body {
   font: 500 clamp(22px, 2.2vw, 34px) / 1.15 var(--font-display);
   letter-spacing: -0.035em;
 }
-.pitching-template-copy > p:last-child {
+.pitching-template-copy > p:not(.eyebrow) {
   max-width: 740px;
   margin: 14px 0 0;
   color: #aaa1b4;
   font-size: 14px;
   line-height: 1.7;
 }
+.pitching-template-copy > .pitching-rulebook-copy {
+  margin-top: 7px;
+  color: #d3c2df;
+  font-size: 12px;
+}
+.pitching-template-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+}
 .pitching-template-download {
   flex: 0 0 auto;
   min-width: 244px;
   min-height: 54px;
+}
+.pitching-rulebook-download {
+  border-color: #c7a4df66;
+  color: #e7d9ee;
 }
 @keyframes pitching-notice-in {
   from {
@@ -2318,9 +2333,10 @@ body {
   .pitching-template-copy h2 {
     font-size: 23px;
   }
-  .pitching-template-copy > p:last-child {
+  .pitching-template-copy > p:not(.eyebrow) {
     font-size: 13px;
   }
+  .pitching-template-actions,
   .pitching-template-download {
     width: 100%;
     min-width: 0;

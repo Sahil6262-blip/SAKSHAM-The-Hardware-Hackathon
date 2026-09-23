@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import { Download, X } from 'lucide-react'
+import { BookOpen, Download, X } from 'lucide-react'
 
 const templatePath = '/assets/SAKSHAM26_Pitching_Round_PPT_Template.pptx'
 const templateFileName = 'SAKSHAM26_Pitching_Round_PPT_Template.pptx'
+const rulebookPath = '/assets/SAKSHAM_RULEBOOK.pdf'
+const rulebookFileName = 'SAKSHAM_RULEBOOK.pdf'
 
 export default function PitchingTemplateNotice() {
   const [visible, setVisible] = useState(true)
@@ -20,7 +22,7 @@ export default function PitchingTemplateNotice() {
           <button
             className="pitching-template-close"
             type="button"
-            aria-label="Dismiss pitching round template notification"
+            aria-label="Dismiss participant resources notification"
             onClick={() => setVisible(false)}
           >
             <X size={18} aria-hidden="true" />
@@ -35,15 +37,28 @@ export default function PitchingTemplateNotice() {
               The official PPT template for the SAKSHAM’26 Pitching Round is now available.
               Participants are requested to use this template while preparing their presentation.
             </p>
+            <p className="pitching-rulebook-copy">
+              The official SAKSHAM’26 Rule Book is also available for participants.
+            </p>
           </div>
-          <a
-            className="button button-filled pitching-template-download"
-            href={templatePath}
-            download={templateFileName}
-          >
-            DOWNLOAD PPT TEMPLATE
-            <Download size={17} aria-hidden="true" />
-          </a>
+          <div className="pitching-template-actions">
+            <a
+              className="button button-filled pitching-template-download"
+              href={templatePath}
+              download={templateFileName}
+            >
+              DOWNLOAD PPT TEMPLATE
+              <Download size={17} aria-hidden="true" />
+            </a>
+            <a
+              className="button pitching-template-download pitching-rulebook-download"
+              href={rulebookPath}
+              download={rulebookFileName}
+            >
+              DOWNLOAD RULE BOOK
+              <BookOpen size={17} aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </div>
     </aside>
