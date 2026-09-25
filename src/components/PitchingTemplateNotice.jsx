@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BookOpen, Download, X } from 'lucide-react'
+import { BookOpen, Clock3, Download, X } from 'lucide-react'
 
 const templatePath = '/assets/SAKSHAM26_Pitching_Round_PPT_Template.pptx'
 const templateFileName = 'SAKSHAM26_Pitching_Round_PPT_Template.pptx'
@@ -28,6 +28,11 @@ export default function PitchingTemplateNotice() {
             <X size={18} aria-hidden="true" />
           </button>
           <div className="pitching-template-copy">
+            <div className="registration-deadline">
+              <Clock3 size={17} aria-hidden="true" />
+              <span>REGISTRATION CLOSES TODAY</span>
+              <strong>12:00 PM</strong>
+            </div>
             <p className="eyebrow">
               <span className="status-dot" />
               PARTICIPANT UPDATE

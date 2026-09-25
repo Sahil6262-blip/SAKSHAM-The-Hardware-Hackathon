@@ -2262,6 +2262,26 @@ body {
 .pitching-template-copy {
   max-width: 820px;
 }
+.registration-deadline {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border: 1px solid #f1a27a55;
+  border-radius: 999px;
+  color: #f9ded0;
+  background: linear-gradient(90deg, #c96f3d24, #b77ad819);
+  font: 600 11px/1 var(--font-mono);
+  letter-spacing: 0.09em;
+}
+.registration-deadline svg {
+  color: #f1a27a;
+}
+.registration-deadline strong {
+  color: #fff1e8;
+  font-weight: 700;
+}
 .pitching-template-copy .eyebrow {
   display: flex;
   align-items: center;
@@ -2329,6 +2349,11 @@ body {
   }
   .pitching-template-copy {
     padding-right: 25px;
+  }
+  .registration-deadline {
+    max-width: calc(100% - 18px);
+    flex-wrap: wrap;
+    font-size: 10px;
   }
   .pitching-template-copy h2 {
     font-size: 23px;
