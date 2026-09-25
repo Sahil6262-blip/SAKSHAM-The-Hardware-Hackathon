@@ -356,6 +356,11 @@ body {
 .nav-register {
   font-size: 10px;
 }
+.register-button.registration-closed:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+  box-shadow: none;
+}
 .text-link {
   border-color: #9b82b95c;
 }

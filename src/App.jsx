@@ -4,7 +4,6 @@ import Navbar from './components/Navbar'
 import IntroExperience from './components/IntroExperience'
 import Hero from './components/Hero'
 import EventMarquee from './components/EventMarquee'
-import PitchingTemplateNotice from './components/PitchingTemplateNotice'
 import About from './components/About'
 import DurationSection from './components/DurationSection'
 import Domains from './components/Domains'
@@ -47,7 +46,6 @@ export default function App() {
           <Hero active={entering} />
           <Countdown />
           <EventMarquee />
-          <PitchingTemplateNotice />
           <About />
           <DurationSection />
           <Domains />

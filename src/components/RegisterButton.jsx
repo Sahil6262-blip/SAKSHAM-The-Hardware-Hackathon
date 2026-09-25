@@ -1,18 +1,33 @@
 import { useRef } from 'react'
 import { createPortal } from 'react-dom'
-import { ArrowUpRight, X, Radio } from 'lucide-react'
+import { ArrowUpRight, LockKeyhole, X, Radio } from 'lucide-react'
 import { eventConfig } from '../data/eventConfig'
 import { isRegistrationUrlValid } from '../utils/registration'
 
 export default function RegisterButton({ children = 'Register now', className = '', onClick }) {
   const dialog = useRef(null)
-  const valid = isRegistrationUrlValid(eventConfig.registrationUrl)
+  const registrationOpen = eventConfig.registrationOpen !== false
+  const valid = registrationOpen && isRegistrationUrlValid(eventConfig.registrationUrl)
   const contents = (
     <>
-      <span>{children}</span>
-      <ArrowUpRight size={17} aria-hidden="true" />
+      <span>{registrationOpen ? children : 'Registration closed'}</span>
+      {registrationOpen ? (
+        <ArrowUpRight size={17} aria-hidden="true" />
+      ) : (
+        <LockKeyhole size={15} aria-hidden="true" />
+      )}
     </>
   )
+  if (!registrationOpen)
+    return (
+      <button
+        className={`button register-button registration-closed ${className}`}
+        type="button"
+        disabled
+      >
+        {contents}
+      </button>
+    )
   if (valid)
     return (
       <a

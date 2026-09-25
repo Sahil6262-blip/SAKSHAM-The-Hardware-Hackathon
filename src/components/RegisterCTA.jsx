@@ -24,11 +24,13 @@ export default function RegisterCTA() {
         <RegisterButton className="button-filled register-final" />
         <div className="register-details mono">
           <span>{eventConfig.registrationFee} registration</span>
-          <span>Closes {eventConfig.registrationDeadline}</span>
+          <span>Closed {eventConfig.registrationDeadline}</span>
         </div>
         <p className="register-status mono">
           {eventConfig.name} /{' '}
-          {isRegistrationUrlValid(eventConfig.registrationUrl)
+          {!eventConfig.registrationOpen
+            ? 'REGISTRATION // CLOSED'
+            : isRegistrationUrlValid(eventConfig.registrationUrl)
             ? 'REGISTRATION // ONLINE'
             : 'REGISTRATION LINK // COMING SOON'}
         </p>

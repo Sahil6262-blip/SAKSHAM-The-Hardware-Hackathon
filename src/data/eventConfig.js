@@ -13,6 +13,7 @@ export const eventConfig = {
   // Date-level conclusion: do not infer an unannounced start/end clock time.
   eventEndDate: '2026-10-02T00:00:00+05:30',
   registrationDeadline: '25 September 2026',
+  registrationOpen: false,
   teamSize: '3–4 Members',
   eligibility: 'Open to All UG Students',
   prizePool: '₹30,000',
@@ -31,6 +32,6 @@ export const eventConfig = {
     { handle: '@ieee_vcet_sb', url: 'https://www.instagram.com/ieee_vcet_sb/' },
     { handle: '@iete.vcet', url: 'https://www.instagram.com/iete.vcet/' },
   ],
-  // PASTE YOUR GOOGLE FORM URL BELOW. This one string updates ALL register buttons.
+  // This URL is used by all register buttons whenever registrationOpen is true.
   registrationUrl: 'https://forms.gle/Lx3w7c5VGyoKZoYg6',
 }
