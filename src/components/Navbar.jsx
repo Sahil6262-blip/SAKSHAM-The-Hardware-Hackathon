@@ -4,7 +4,7 @@ import { Menu, X, Cpu } from 'lucide-react'
 import RegisterButton from './RegisterButton'
 import { eventConfig } from '../data/eventConfig'
 
-const links = ['Home', 'About', 'Domains', 'Timeline', 'Prizes', 'Rules', 'FAQ', 'Contact']
+const links = ['Home', 'About', 'Domains', 'Timeline', 'Results', 'Prizes', 'Rules', 'FAQ', 'Contact']
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)

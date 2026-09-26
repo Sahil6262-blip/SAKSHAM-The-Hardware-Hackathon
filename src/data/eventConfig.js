@@ -34,4 +34,6 @@ export const eventConfig = {
   ],
   // This URL is used by all register buttons whenever registrationOpen is true.
   registrationUrl: 'https://forms.gle/Lx3w7c5VGyoKZoYg6',
+  finalRoundRegistrationUrl:
+    'https://docs.google.com/forms/d/e/1FAIpQLScmBrX-WSSyFGNSmj5Dktw79BDhveIoFuhHBxyLF-LJM5wUnA/viewform?usp=publish-editor',
 }

@@ -12,6 +12,8 @@ import BuildFlow from './components/BuildFlow'
 import PrizePool from './components/PrizePool'
 import Countdown from './components/Countdown'
 import Timeline from './components/Timeline'
+import Results from './components/Results'
+import ResultsAnnouncement from './components/ResultsAnnouncement'
 import Eligibility from './components/Eligibility'
 import RuleBook from './components/RuleBook'
 import FAQ from './components/FAQ'
@@ -42,6 +44,7 @@ export default function App() {
           Skip to content
         </a>
         <Navbar />
+        {!introVisible && <ResultsAnnouncement />}
         <main id="main" ref={page}>
           <Hero active={entering} />
           <Countdown />
@@ -53,6 +56,7 @@ export default function App() {
           <BuildFlow />
           <PrizePool />
           <Timeline />
+          <Results />
           <Eligibility />
           <RuleBook />
           <FAQ />
